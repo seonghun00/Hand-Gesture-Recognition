@@ -29,7 +29,7 @@
 ### 1. 실시간 손가락 랜드마크 추적 (Core Landmark Tracking)
 > 기본 랜드마크 모델을 사용하여 손가락의 21개 관절 포인트를 실시간으로 추적하는 모델입니다.
 
-<p align="left">
+<p align="left"> 
   <img width="600" src="./assets/result_images/landmark_tracking.gif" alt="Hand Landmark Tracking" />
 </p>
 
