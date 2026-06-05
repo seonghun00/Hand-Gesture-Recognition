@@ -30,7 +30,7 @@
 > 기본 랜드마크 모델을 사용하여 손가락의 21개 관절 포인트를 실시간으로 추적하는 모델입니다.
 
 <p align="left"> 
-  <img width="600" src="./assets/result_images/landmark_tracking.gif" alt="Hand Landmark Tracking" />
+  <img width="450" src="./assets/result_images/landmark_tracking.gif" alt="Hand Landmark Tracking" />
 </p>
 
 ### 2. 최종 온디바이스 제스처 인식 애플리케이션 (Final Custom H.G.R App)
@@ -65,7 +65,7 @@
 ### 💻 2단계: Google Colab을 통한 모델 학습 (Model Training)
 * **목적**: 준비한 사진들을 인공지능에게 가르치고 가벼운 실행 파일(`.task`)로 변환합니다.
 * **방법**:
-  1. [구글 공식 코랩 노트북](https://colab.research.google.com/github/googlesamples/mediapipe/blob/main/examples/gesture_recognizer/python/gesture_recognizer.ipynb) 환경에 접속합니다[cite: 1].
+  1. [구글 공식 코랩 노트북](https://colab.research.google.com/github/googlesamples/mediapipe/blob/main/examples/gesture_recognizer/python/gesture_recognizer.ipynb) 환경에 접속합니다.
   2. 상단 메뉴 **[런타임] ➔ [런타임 유형 변경]**에서 하드웨어 가속기를 **`T4 GPU`**로 세팅합니다.
   3. 노트북에 적힌 `mediapipe-model-maker` 패키지 설치부터 데이터 로드 코드 블록의 `[ ▶ ]` 버튼을 순서대로 실행합니다.
   4. 학습이 끝나면 기기에 이식할 핵심 가속 모델인 **`gesture_recognizer.task`** 파일을 다운로드합니다.
