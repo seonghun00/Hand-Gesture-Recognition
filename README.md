@@ -11,7 +11,7 @@
   <img src="https://img.shields.io/badge/MediaPipe-0082FC?logo=google&logoColor=white">
 </p>
 
-본 프로젝트는 기존 HGR(Hand Gesture Recognition) 시스템의 고정된 손동작 인식 한계를 넘어, 사용자가 원하는 커스텀 제스처를 직접 빌드하고 스마트폰이나 PC 환경에서 실시간으로 실행하는 것이 목적입니다.
+본 프로젝트는 ICCV 2023에서 제안된 on-device 기반 실시간 커스텀 손 제스처 인식 논문을 참고하여, 소량의 사용자 데이터만으로 새로운 제스처를 빠르게 학습하고 모바일 및 PC 환경에서 실시간으로 실행할 수 있도록 설계했습니다.
 * **Paper:** [On-Device Real-Time Custom Hand Gesture Recognition](https://openaccess.thecvf.com/content/ICCV2023W/CV4Metaverse/papers/Uboweja_On-Device_Real-Time_Custom_Hand_Gesture_Recognition_ICCVW_2023_paper.pdf)
 
 ---
