@@ -12,6 +12,7 @@
 </p>
 
 본 프로젝트는 기존 HGR(Hand Gesture Recognition) 시스템의 고정된 손동작 인식 한계를 넘어, 사용자가 원하는 커스텀 제스처를 직접 빌드하고 스마트폰이나 PC 환경에서 실시간으로 실행하는 것이 목적입니다.
+* **Paper:** [On-Device Real-Time Custom Hand Gesture Recognition](https://openaccess.thecvf.com/content/ICCV2023W/CV4Metaverse/papers/Uboweja_On-Device_Real-Time_Custom_Hand_Gesture_Recognition_ICCVW_2023_paper.pdf)
 
 ---
 
@@ -24,7 +25,27 @@
 
 ---
 
-## 📺 결과 영상 (Demo)
+## 🔄 흐름도 (Flowchart)
+
+```mermaid
+graph LR
+    subgraph "1. 학습 (Training)"
+        A[📹 데이터 입력] --> B[🙌 MediaPipe 관절 추출]
+        B --> C[⚙️ 정규화 + 라벨링]
+        C --> D{🧠 LR 모델 학습}
+    end
+
+    subgraph "2. 인식 (Inference)"
+        E[📹 실시간 캠] --> F[🙌 실시간 관절 추출]
+        F --> G{🧠 학습된 LR 모델}
+        D -.->|모델 반영| G
+        G --> H[🖥️ 제스처 결과 출력]
+    end
+```
+
+---
+
+## 📺 결과 영상
 
 ### 1. 실시간 손가락 랜드마크 추적 (Core Landmark Tracking)
 > 기본 랜드마크 모델을 사용하여 손가락의 21개 관절 포인트를 실시간으로 추적하는 모델입니다.
