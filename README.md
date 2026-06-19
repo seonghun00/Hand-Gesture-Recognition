@@ -6,7 +6,6 @@
 > **구글 MediaPipe를 활용하여 나만의 손 제스처를 학습시키고 기기에서 실시간으로 구동하는 시스템입니다.**
 
 <p align="left">
-  <img src="https://img.shields.io/badge/License-MIT-yellow?logo=opensourceinitiative&logoColor=white">
   <img src="https://img.shields.io/badge/TensorFlow_Lite-FF6F00?logo=tensorflow&logoColor=white">
   <img src="https://img.shields.io/badge/MediaPipe-0082FC?logo=google&logoColor=white">
 </p>
